@@ -1,0 +1,104 @@
+$top_border: 49px;
+
+.leader-house-container {
+    width: 100%;
+
+    .house-flag {
+        width: 160px;
+        height: 280px;
+        display: inline-block;
+        border: 1px solid cyan;
+        margin: 10px 20px;
+        position: relative;
+        
+        img {
+            width: 155px;
+            height: 200px;
+        }
+    
+        .yellow-house-image {
+            border: 2px solid yellow;
+        }
+    
+        .red-house-image {
+            border: 2px solid red;
+        }
+    
+        .green-house-image {
+            border: 2px solid green;
+        }
+    
+        .blue-house-image {
+            border: 2px solid blue;
+        }
+
+        .house-name {
+            margin: 0;
+            padding: 0;
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                vertical-align: middle;
+                text-align: center;                
+            }
+        }
+
+        .left-flag {            
+            width: 0;
+            height: 0;
+            bottom: 0;
+            left: 0px;
+            border-right: 80px solid transparent;
+            position: absolute;
+        }
+
+        .right-flag {
+            width: 0;
+            height: 0;
+            bottom: 0;
+            right: 0px;
+            border-left: 80px solid transparent;
+            border-right: 0px solid transparent;
+            
+            position: absolute;
+        }
+
+        .left-yellow-flag {
+            border-left: 0px solid yellow;
+            border-top: $top_border solid yellow;
+        }
+
+        .right-yellow-flag {
+            border-top: $top_border solid yellow;
+        }        
+
+        .left-red-flag {
+            border-left: 0px solid red;
+            border-top: $top_border solid red;
+        }
+
+        .right-red-flag {
+            border-top: $top_border solid red;
+        }
+
+        .left-green-flag {
+            border-left: 0px solid green;
+            border-top: $top_border solid green;
+        }
+
+        .right-green-flag {
+            border-top: $top_border solid green;
+        }
+
+        .left-blue-flag {
+            border-left: 0px solid blue;
+            border-top: $top_border solid blue;
+        }
+
+        .right-blue-flag {
+            border-top: $top_border solid blue;
+        }
+    }
+}

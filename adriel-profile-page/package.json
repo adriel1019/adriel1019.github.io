@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod=true --outputPath=docs",
-    "deploy": "ng deploy --prod=true --outputPath=docs",
+    "build": "ng build --prod=true",
+    "deploy": "ng deploy --prod=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
