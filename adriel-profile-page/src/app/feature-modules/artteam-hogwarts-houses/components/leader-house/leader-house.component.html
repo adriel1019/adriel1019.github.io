@@ -1,27 +1,12 @@
 <div class="leader-house-container">
-    <div class="house-flag yellow-house">
-        <img class="yellow-house-image" src="./../../../../../assets/images/art-team-members/houses-leaders/Dan.jpeg" alt="">
-        <div class="house-name"><p>Hupplepuff</p></div>
-        <div class="left-flag left-yellow-flag"></div>
-        <div class="right-flag right-yellow-flag"></div>
-    </div>
-    <div class="house-flag">        
-        <img class="red-house-image" src="./../../../../../assets/images/art-team-members/houses-leaders/Dany.jpeg" alt="">
-        <div class="house-name"><p>Gryffindor</p></div>
-        <div class="left-flag left-red-flag"></div>
-        <div class="right-flag right-red-flag"></div>
-    </div>
-    <div class="house-flag">
-        <img class="green-house-image" src="./../../../../../assets/images/art-team-members/houses-leaders/Pam.jpeg" alt="">        
-        <div class="house-name"><p>Slytherin</p></div>
-        <div class="left-flag left-green-flag"></div>
-        <div class="right-flag right-green-flag"></div>
-    </div>
-    <div class="house-flag">
-        <img class="blue-house-image" src="./../../../../../assets/images/art-team-members/houses-leaders/Lore.jpeg" alt="">        
-        <div class="house-name"><p>Ravenclaw</p></div>
-        <div class="left-flag left-blue-flag"></div>
-        <div class="right-flag right-blue-flag"></div>
-    </div>
-
+    <div
+        *ngIf="houseData" 
+        class="house-flag {{houseData.color}}-house">
+        <img 
+            class="{{houseData.color}}-house-image" 
+            [src]="imgSrc" alt="">
+        <div class="house-name"><p>{{houseData.name}}</p></div>
+        <div class="left-flag left-{{houseData.color}}-flag"></div>
+        <div class="right-flag right-{{houseData.color}}-flag"></div>
+    </div>    
 </div>

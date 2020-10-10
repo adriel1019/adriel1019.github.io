@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HogwartteamMembersService } from './hogwartteam-members.service';
+import { HogwartteamMembersService } from './members.service';
 
 describe('HogwartteamMembersService', () => {
   let service: HogwartteamMembersService;

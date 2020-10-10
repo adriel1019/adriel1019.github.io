@@ -1,1 +1,16 @@
-<p>student-list works!</p>
+<div class="student-list-container">
+
+    <div class="student-counter">
+        <p>{{studentsHouseList.length}}</p>
+    </div>
+
+    <div
+        *ngFor="let studentData of studentsHouseList"
+        class="student-item"
+        [ngClass]="{'yellow-leader-item': studentData.isLeader === true && studentData.houseId === 2,
+                    'red-leader-item': studentData.isLeader === true && studentData.houseId === 1,
+                    'green-leader-item': studentData.isLeader === true && studentData.houseId === 3,
+                    'blue-leader-item': studentData.isLeader === true && studentData.houseId === 4}">
+        <p>{{studentData.name}}</p>
+    </div>
+</div>

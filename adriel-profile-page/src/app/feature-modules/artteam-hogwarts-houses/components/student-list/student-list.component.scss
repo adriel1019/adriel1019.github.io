@@ -1,0 +1,50 @@
+.student-list-container {
+
+    margin-top: 20px;
+        
+    div {
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    .student-counter {
+        p {
+            // border:1px solid red;            
+            text-align: center;
+        }
+
+        margin-bottom: 20px;
+    }
+
+    .student-item {
+        p {
+
+        }
+    }
+
+    .yellow-leader-item {
+        background-color: rgb(255, 230, 6);
+        font-weight: bold;
+    }
+
+    .red-leader-item {
+        background-color: rgb(95, 3, 3);
+        color: rgb(233, 229, 229);
+        font-weight: bold;
+    }
+
+    .green-leader-item {
+        background-color: rgb(14, 37, 14);
+        color: rgb(233, 229, 229);
+        font-weight: bold;
+    }
+
+    .blue-leader-item {
+        background-color: rgb(18, 30, 58);
+        color: rgb(233, 229, 229);
+        font-weight: bold;
+    }
+}
